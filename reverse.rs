@@ -10,4 +10,11 @@ fn main() {
     let reversed = String::from_utf8(reversed).unwrap();
     println!("Reversed bytes: {}", reversed);
 
+
+    let s = "hello";
+    let mut reversed = String::new();
+    for c in s.chars().rev() {
+        reversed.push(c);
+    }
+    println!("Reversed string (manual): {}", reversed);
 }
